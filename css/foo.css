@@ -1,0 +1,192 @@
+body {
+    margin: auto;
+    padding: 50px;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* ---- Set up site grid ---- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo banner"
+        "nav nav"
+        "side main"
+        "footer footer";
+    grid-gap: 4px;
+    
+}
+
+/* ---- End of grid setup ---- */
+
+
+/* -000- Area styling -000- */
+
+.box {
+    padding: 20px;
+    border-radius: 10px;
+    }
+
+/* Area colouring... */
+
+/* logo, banner and footer background are the same */
+.logo, .banner, .footer {
+    background-color: #4E658E;  /* Queen Blue */
+}
+
+/* Set font on dark areas to white */
+.logo, .banner, .side, .footer {
+    color: #fff;
+}
+
+/* Area specifics */
+
+.logo {
+    grid-area: logo;
+    padding: 0;
+    height: auto;
+    width: auto;
+    
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #5996C6;  /* Blue Gray */
+    font-size: 150%;
+    text-align: center;
+}
+
+.side {
+    grid-area: side;
+    background-color: #0A3A71;  /* Indigo Dye */
+    color: #fff;
+    border: solid 1px #CCC;
+}
+
+.main {
+    grid-area: main;
+    background-color: #EEE;  /* very pale grey */
+    border: solid 1px #CCC;
+}
+
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+}
+
+/* -000- End of area styling -000- */
+
+h1, h2, h3, h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Navigation Links */
+.nav a {font-weight: bold; text-decoration: none;}
+.nav a:link, .nav a:visited {color: #000;} /* black */
+.nav a:hover {color: #604830;} /* chocolate brown */
+
+
+/* links in page */
+a {font-weight: bold;}
+a:link{color: #fff;} /*white */
+a:visited{color: #fff;} /* white */
+a:hover{color: darkgray;}    /* white*/
+
+
+/* Contact Form Styling */
+.contact {
+    width: 100%;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+    max-width: 85%;
+    height: auto;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);     
+}
+
+.center_image {
+    text-align: center;
+}
+
+/* Sub Heading Formatting */
+.sub_heading {
+    font-family: 'Ubuntu', sans-serif;
+    color: #593849; /* purple */
+    font-weight: bold;
+}
+
+/* Results Box Formatting */
+.results {
+    background-color: #f4ebe1;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+/* Error Box formatting */
+.error {
+    background-color: #ffe0ed;  /*pale pink*/
+    border: 2px solid #8a1737;  /* dark red border */
+    color: #8a1737; /* dark red */
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+/* form formatting */
+
+form {
+    width: 250px;
+
+}
+.search {
+    width: 200px;
+    padding: 8px 15px;
+    background: #fff;
+}
+
+.submit {
+    font-family: FontAwesome;
+    position: relative;
+    width: 45px;
+    left: -1px;
+    background: #636363;
+    color: #d6d6d6;
+    border: 1px solid #636263;
+    border-radius: 0 5px 5px 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #000;
+}
+
+input {
+    height: 40px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.half_width {
+    width: 99px;
+}
+
+select {
+    outline: 0;
+    height: 40px;
+    border: 1px solid #ccc;
+    color: #878787;
+    width: 200px;
+}
