@@ -42,19 +42,16 @@
 <body>
     
     <div class="wrapper">
-    
 
-
-        
-    <div class="box banner">
 
     <!-- logo image linking to home page goes here -->
        <a href="index.php">
         <div class="box logo"  title="Logo - Click here to go to the Home Page">
         <img class="img-circle" src="Images/download.png" alt="generic logo" />
+        </div>  <!-- / logo -->
+        </a> 
 
-        </div> </a>  <!-- / logo -->
-
+    <div class="box banner">
         
     <h1>Food Database</h1>
     </div>    <!-- / banner -->
